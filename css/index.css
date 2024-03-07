@@ -67,6 +67,7 @@ body {
     transition: left 0.3s ease;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 .side-menu.active {
@@ -102,7 +103,8 @@ body {
 }
 
 .nav-bar {
-    width: 70%;margin: auto;
+    width: 70%;
+    margin: auto;
 }
 
 .nav-bar > ul {
@@ -160,13 +162,13 @@ body {
 }
 
 .subject_container_text > h1 {
-    margin: 0;
+    margin: 0 0 100px 0;
     font-size: x-large;
 }
 
 .subject_container_img {
-    width: 300px;
-    background: yellow;
+    width: 400px;
+
 }
 
 /* head */
@@ -174,7 +176,6 @@ body {
 .head {
     width: 100%;
     height: 100px;
-    background: yellow;
     position: absolute;
     top: 0;
     display: flex;
@@ -185,4 +186,144 @@ body {
 .head_button {
     height: 50px;
     margin-right: 70px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+.head_button:hover {
+    color: dodgerblue;
+    border: 2px solid dodgerblue;
+    transition: 0.45s;
+}
+
+/* report */
+
+.report {
+    width: 100%;
+    text-align: center;
+}
+
+.report h4 {
+    margin-top: 0;
+    font-size: 32px;
+}
+
+.report_text {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.report_text p:last-child {
+    margin-bottom: 0;
+}
+
+.hr {
+    border-color: black;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    height: 60px;
+    background: #111212;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.modal__dialog {
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.modal__content {
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.modal__close {
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    font-size: 30px;
+    color: #000;
+    opacity: .5;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.modal__title {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.modal__input {
+    display: block;
+    margin: 20px auto 20px auto;
+    width: 280px;
+    height: 50px;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .2);
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 20px;
+    outline: 0;
+}
+
+.modal .btn {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.1;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
