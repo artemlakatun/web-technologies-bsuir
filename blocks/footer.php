@@ -6,7 +6,7 @@
 <div class="modal">
     <div class="modal__dialog">
         <div class="modal__content">
-            <form action="#">
+            <form action="../db/db.php" method="post">
                 <div class="modal__close" data-close>&times;</div>
                 <div class="modal__title">Поставте вашу оценку!</div>
                 <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
