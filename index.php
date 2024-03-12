@@ -22,10 +22,13 @@ require_once "blocks/header.php";
     <div class="side-menu" id="side-menu">
         <div class="nav-bar">
             <ul>
-                <li><a href="#" class="link">Пункт меню 1</a></li>
-                <li><a href="#" class="link">Пункт меню 2</a></li>
-                <li><a href="#" class="link">Пункт меню 3</a></li>
-                <li><a href="#" class="link">Пункт меню 4</a></li>
+                <li><a href="other_lessons/lesson2.php" class="link">Lesson 2</a></li>
+                <li><a href="other_lessons/lesson3.php" class="link">Lesson 3</a></li>
+                <li><a href="other_lessons/lesson4.php" class="link">Lesson 4</a></li>
+                <li><a href="other_lessons/lesson5.php" class="link">Lesson 5</a></li>
+                <li><a href="other_lessons/lesson6.php" class="link">Lesson 6</a></li>
+                <li><a href="other_lessons/lesson7.php" class="link">Lesson 7</a></li>
+                <li><a href="other_lessons/lesson8.php" class="link">Lesson 8</a></li>
             </ul>
         </div>
     </div>
@@ -104,3 +107,6 @@ require_once "blocks/header.php";
 <?php
 
 require_once "blocks/footer.php";
+
+?>
+<script src="js/index.js"></script>

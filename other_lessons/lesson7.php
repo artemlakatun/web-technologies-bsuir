@@ -25,14 +25,17 @@ require_once "../blocks/header.php";
     <div class="side-menu" id="side-menu">
         <div class="nav-bar">
             <ul>
-                <li><a href="#" class="link">Пункт меню 1</a></li>
-                <li><a href="#" class="link">Пункт меню 2</a></li>
-                <li><a href="#" class="link">Пункт меню 3</a></li>
-                <li><a href="#" class="link">Пункт меню 4</a></li>
+                <li><a href="../index.php" class="link">Home</a></li>
+                <li><a href="lesson2.php" class="link">Lesson 2</a></li>
+                <li><a href="lesson3.php" class="link">Lesson 3</a></li>
+                <li><a href="lesson4.php" class="link">Lesson 4</a></li>
+                <li><a href="lesson5.php" class="link">Lesson 5</a></li>
+                <li><a href="lesson6.php" class="link">Lesson 6</a></li>
+                <li><a href="lesson8.php" class="link">Lesson 8</a></li>
             </ul>
         </div>
     </div>
-<section class="subject">
+<section class="subject ths__subject">
     <form class="lesson7_form" method="POST">
         <label for="recipients">Получатели:</label><br>
         <input type="text" id="recipients" name="recipients" required><br>
@@ -88,10 +91,8 @@ require_once "../blocks/header.php";
 
 <?php
 
-$jsPath = '../js/index.js';
-
 require_once "../blocks/footer.php";
 
 ?>
 
-<script src="<?php echo $jsPath; ?>"
+<script src="../js/index.js"></script>
